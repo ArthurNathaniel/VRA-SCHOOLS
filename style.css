@@ -3,12 +3,55 @@
 body {
     overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.top- {
+    background-color: #0b4575;
+    color: #eee;
+    /* height: 30px; */
+    padding: 0 6%;
+    text-align: center;
+
+}
+
+.top-:hover {
+    font-size: 900;
+}
+
+.icon {
+    text-align: center;
+    width: 100%;
+}
+
+.top .phone {
+    width: 100%;
+}
+
+.top- a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    /* background-color: red; */
+    text-align: left;
+}
+
+.flex-- {
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar {
     padding: 0 5%;
     padding-block: 15px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: transparent;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+.navbar img {
+    width: 300px;
 }
 
 .swiper {
@@ -108,6 +151,7 @@ body {
     margin-bottom: 100px;
     width: 100%;
     color: #fff;
+    overflow: hidden;
 }
 
 .bu img {
@@ -139,7 +183,7 @@ body {
 }
 
 .box-- {
-    width: 33%;
+    width: 33.33%;
     background-color: #0b4575;
 }
 
@@ -189,19 +233,64 @@ footer {
     padding-top: 50px;
     color: #fff;
 }
-footer li{
+
+footer li {
     list-style-type: none;
 }
-footer li a{
+
+footer li a {
     text-decoration: none;
     color: #eee;
     line-height: 40px;
-   
+
 }
-footer li a:hover{
+
+footer li a:hover {
     color: #99c7f3;
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
+}
+
+
+
+
+/* CSS */
+.button-89 {
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+    padding: 0 60px;
+    padding-block: 20px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.button-89:active {
+    background: var(--color);
+    color: #fff;
 }
