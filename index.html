@@ -306,29 +306,27 @@
         <div class="touch-point overflow-hidden" >
             <h1>Our Education Touch Points</h1>
             <div class="row edu circle_area">
-                <div class="col-md-3 circle_box"">
-                    <div class="circle">
-
-                    </div>
-                    <div class="one">
-                        <img src="images/a.png" alt="">
+                <div class="col-md-3 circle_box">
+                    <div class="circle_con">
+                        <div class="circle c_one" style="background: #e6bf3e;"></div>
+                        <div class="one">
+                            <img src="images/a.png" alt="">
+                        </div>
                     </div>
                     <h3>Pre-School</h3>
                 </div>
                 <div class="col-md-3 circle_box">
-                    <div class="circle">
-
-                    </div>
-                    <div class="two">
-                        <img src="images/b.png" alt="">
+                    <div class="circle_con">
+                        <div class="circle c_two" style="background: #c49c8f;"></div>
+                        <div class="two">
+                            <img src="images/b.png" alt="">
+                        </div>
                     </div>
                     <h3>Primary</h3>
                 </div>
                 <div class="col-md-3 circle_box" >
                     <div class="circle_con">
-                        <div class="circle">
-
-                        </div>
+                        <div class="circle c_one" style="background: #7bc5c3;"></div>
                         <div class="one">
                             <img src="images/c.png" alt="">
                         </div>
@@ -336,12 +334,11 @@
                     <h3>JHS</h3>
                 </div>
                 <div class="col-md-3 circle_box">
-                    
-                    <div class="two">
-                        <img src="images/d.png" alt="">
-                    </div>
-                    <div class="circle">
-
+                    <div class="circle_con">
+                        <div class="circle c_two" style="background: #ecd0b2;"></div>
+                        <div class="two">
+                            <img src="images/d.png" alt="">
+                        </div>
                     </div>
                     <h3>SHS</h3>
                 </div>
@@ -351,62 +348,7 @@
                 and senior high students with excellence and dedication</p>
         </div>
     </section>
-    <style>
-        
-        .circle_box{
-            position: relative;
-            border: 1px solid black;
-        }
-        .circle{
-            background: salmon;
-            position: absolute;
-            border-radius: 50%;
-            width: 170px;
-            z-index: 1;
-            height: 170px;
-        }
-        .circle{
-            top: 0;
-            left: 10px;
-            transition: 0.5s ease;
-        }
-        .circle_con{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid gold;
-            height: 30vh;
-        }
-        .one,.two{
-            position: absolute;
-            border: 1px solid red;
-            
-            transition: 0.5s ease;
-            z-index: 100;
-        }
-        .circle_area{
-            border: 3px solid black;
-        }
-        .circle_area:hover .circle_box .circle{
-            top: 10%;
-            left: 25%;
-        }
-        .circle_area:hover .circle_box .one{
-            top: 0;
-            left: 10px;
-        }
-    </style>
-    <script>
-        const circle_area = document.getElementById('circle_area')
-        circle_area.onmouseover =()=>{
-            console.log('me')
-        }
-        const circle = document.querySelectorAll('.circle')
-        circle.forEach(c=>{
-            c.style.zIndex = 0
-        })
-    </script>
-
+    
     <section>
         <div class="about-home">
             <div class="row gy-5">
@@ -498,6 +440,20 @@
         </div>
     </section>
 
+    <section>
+        <div class="row admission-home">
+            <div class="col-md-8 ">
+                <h1>Admissions</h1>
+                <button class="button-55" role="button" style="background-color: red;">
+                    <a href="" style="text-decoration: none;"> Make Enquiry</a>
+                </button>
+                <h5>If you have any enquiry, please do not hesitate to contact us.</h5>
+            </div>
+            <div class="col-md-4">
+               <img src="images/admission-logo.png" alt="" class="admission-top">
+            </div>
+        </div>
+    </section>
    
 
 
@@ -597,6 +553,27 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+
+    <script>
+        const c_ones = document.querySelectorAll('.c_one')
+        const c_twos = document.querySelectorAll('.c_two')
+        window.onpointermove =()=>{
+            var top_value = parseInt(event.clientY)
+            top_value = (top_value * 25) / 400
+            var left_value = parseInt(event.clientX)
+            left_value = (left_value * 20) / 800
+            c_ones.forEach((circle,i)=>{
+                var x= (i*5)
+                circle.style.top = `${top_value+x}%`
+                circle.style.left = `${left_value+x}%`                
+            })
+            c_twos.forEach((circle,i)=>{
+                var x= (i*5)
+                circle.style.bottom = `${top_value+x}%`
+                circle.style.right = `${left_value+x}%`                
+            })
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"

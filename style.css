@@ -45,7 +45,9 @@ body {
 
 .navbar {
     padding: 0 5%;
-    padding-block: 15px;
+    padding-block: 25px;
+    border-radius: 50px;
+    margin: 0 5%;
     /* background-color: #fff; */
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 }
@@ -234,7 +236,7 @@ body {
 
 footer {
     padding: 0 5%;
-    background-color: #333333;
+    background-color: #0b4575;
     padding-top: 50px;
     color: #fff;
 }
@@ -251,7 +253,11 @@ footer li a {
 }
 
 footer li a:hover {
-    color: #99c7f3;
+    color: #e4e2c6;
+}
+
+footer h2 {
+    color: #e4e2c6;
 }
 
 .hero-text {
@@ -286,6 +292,7 @@ footer li a:hover {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-block: 20px;
 }
 
 .button-89:hover,
@@ -335,4 +342,146 @@ footer li a:hover {
     padding-top: 50px;
     font-size: 20px;
     text-align: center;
+}
+
+.admission-home {
+    padding: 0 5%;
+    padding-block: 60px;
+    background-color: #e5eb10;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+
+.admission-home h1 {
+    font-size: 72px;
+    color: #0b4575;
+}
+
+.admission-home h5 {
+    color: #0b4575;
+}
+
+.admission-top {
+    margin-top: -170px;
+}
+
+
+
+
+
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid #0b4575;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  padding: 10px 56px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.touch-point p{
+    font-weight: 500;
+    padding: 0 5%;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.circle_box{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    z-index: 1;
+    height: 120px;
+}
+.circle{
+    transition: 0.3s ease;
+}
+.c_one{
+    left: 0;
+    top: 0;
+}
+.c_two{
+    bottom: 0;
+    right: 0;
+}
+.circle_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 30vh;
+}
+.circle_con:hover .circle{
+    transition: 0.3s ease;
+    transform: scale(1.5);
+    border-radius: 0;
+}
+.circle_con:hover .c_one{
+    top: 23% !important;
+    left: 28% !important;
+}
+.circle_con:hover .c_two{
+    bottom: 10% !important;
+    right: 10% !important;
+}
+.circle_con:hover .one{
+    top: 25%;
+    left: 35%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+.circle_con:hover .two{
+    top: 15%;
+    left: 25%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+.one,.two{
+    transition: 0.4s ease;
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    z-index: 100;
 }
