@@ -294,3 +294,41 @@ footer li a:hover {
     background: var(--color);
     color: #fff;
 }
+
+.touch-point {
+    padding: 0 5%;
+    background-color: #f2f2f2;
+    padding-block: 100px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.touch-point h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 52px;
+    color: #0b4575;
+}
+
+.edu {
+    text-align: center;
+}
+
+.edu h3 {
+    padding-top: 30px;
+    color: #cc3366;
+}
+
+.edu h3:hover {
+    color: #0b4575;
+}
+
+.touch-point p{
+    font-weight: 500;
+    padding: 0 5%;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+

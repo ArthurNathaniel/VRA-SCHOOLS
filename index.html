@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <!-- <header class="container-fluid">
         <div class="row top-">
             <div class="col-md-5">
                 <div class="row">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-    </header>
+    </header> -->
 
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -302,6 +302,110 @@
             </div>
         </div>
     </div>
+    <section>
+        <div class="touch-point overflow-hidden" >
+            <h1>Our Education Touch Points</h1>
+            <div class="row edu circle_area">
+                <div class="col-md-3 circle_box"">
+                    <div class="circle">
+
+                    </div>
+                    <div class="one">
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <h3>Pre-School</h3>
+                </div>
+                <div class="col-md-3 circle_box">
+                    <div class="circle">
+
+                    </div>
+                    <div class="two">
+                        <img src="images/b.png" alt="">
+                    </div>
+                    <h3>Primary</h3>
+                </div>
+                <div class="col-md-3 circle_box" >
+                    <div class="circle_con">
+                        <div class="circle">
+
+                        </div>
+                        <div class="one">
+                            <img src="images/c.png" alt="">
+                        </div>
+                    </div>
+                    <h3>JHS</h3>
+                </div>
+                <div class="col-md-3 circle_box">
+                    
+                    <div class="two">
+                        <img src="images/d.png" alt="">
+                    </div>
+                    <div class="circle">
+
+                    </div>
+                    <h3>SHS</h3>
+                </div>
+            </div>
+            <p>VRA International Schools, where we cater to the academic needs of pre-school, primary,
+                junior high,
+                and senior high students with excellence and dedication</p>
+        </div>
+    </section>
+    <style>
+        
+        .circle_box{
+            position: relative;
+            border: 1px solid black;
+        }
+        .circle{
+            background: salmon;
+            position: absolute;
+            border-radius: 50%;
+            width: 170px;
+            z-index: 1;
+            height: 170px;
+        }
+        .circle{
+            top: 0;
+            left: 10px;
+            transition: 0.5s ease;
+        }
+        .circle_con{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid gold;
+            height: 30vh;
+        }
+        .one,.two{
+            position: absolute;
+            border: 1px solid red;
+            
+            transition: 0.5s ease;
+            z-index: 100;
+        }
+        .circle_area{
+            border: 3px solid black;
+        }
+        .circle_area:hover .circle_box .circle{
+            top: 10%;
+            left: 25%;
+        }
+        .circle_area:hover .circle_box .one{
+            top: 0;
+            left: 10px;
+        }
+    </style>
+    <script>
+        const circle_area = document.getElementById('circle_area')
+        circle_area.onmouseover =()=>{
+            console.log('me')
+        }
+        const circle = document.querySelectorAll('.circle')
+        circle.forEach(c=>{
+            c.style.zIndex = 0
+        })
+    </script>
 
     <section>
         <div class="about-home">
@@ -341,7 +445,7 @@
             </div>
             <div class="col-md-4 box-- middle container-" data-aos="zoom-out-up" data-aos-delay="500">
                 <h1><span class="material-symbols-outlined" style="font-size: 100px;">
-                    school
+                        school
                     </span></h1>
                 <h1 class="image">Academics</h1>
                 <!-- <div class="overlay">
@@ -355,7 +459,7 @@
             </div>
             <div class="col-md-4 box-- middle container-" data-aos="zoom-out-up" data-aos-delay="500">
                 <h1><span class="material-symbols-outlined" style="font-size: 100px;">
-                    distance
+                        distance
                     </span></h1>
                 <h1 class="image">Our Campuses</h1>
                 <!-- <div class="overlay">
@@ -368,8 +472,8 @@
                 <img src="images/students.jpg" alt="">
             </div>
             <div class="col-md-4 box-- middle container-" data-aos="zoom-out-up" data-aos-delay="500">
-                <h1 ><span class="material-symbols-outlined" style="font-size: 100px;">
-                    newspaper
+                <h1><span class="material-symbols-outlined" style="font-size: 100px;">
+                        newspaper
                     </span></h1>
                 <h1 class="image">News & Events</h1>
                 <!-- <div class="overlay">
@@ -393,6 +497,8 @@
             </button>
         </div>
     </section>
+
+   
 
 
     <footer>
