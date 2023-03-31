@@ -46,8 +46,13 @@ body {
 .navbar {
     padding: 0 5%;
     padding-block: 15px;
-    background-color: transparent;
+    /* background-color: #fff; */
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+.sticky-top {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #fff;
 }
 
 .navbar img {
@@ -324,11 +329,10 @@ footer li a:hover {
     color: #0b4575;
 }
 
-.touch-point p{
+.touch-point p {
     font-weight: 500;
     padding: 0 5%;
     padding-top: 50px;
     font-size: 20px;
     text-align: center;
 }
-
