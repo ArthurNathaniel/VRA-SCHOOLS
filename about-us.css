@@ -8,7 +8,7 @@
     margin-block: 50px; 
 }
 
-.one{
+.one-{
     background-color: #f9f9ff;
     padding: 0 5%;
     padding-block: 80px;
@@ -16,7 +16,7 @@
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
 }
-.one:hover{
+.one-:hover{
     background-color: #eee;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
