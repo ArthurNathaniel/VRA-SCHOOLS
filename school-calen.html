@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Calendar - VRA INternational Schools</title>
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--Animate On scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Google Icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--CSS Custom-->
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css'
+        media='print' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                defaultDate: '2023-04-03',
+                navLinks: true,
+                editable: true,
+                eventLimit: true,
+                events: [
+                    // {
+                    // title: 'Event 1',
+                    //    start: '2023-04-03',
+                    //    end: '2023-04-03T12:00:00'
+                    // },
+                    //{
+                    //    title: 'Event 2',
+                    //    start: '2023-04-04T14:00:00',
+                    //    end: '2023-04-04T16:00:00'
+                    //} 
+                    //,
+                    {
+                        title: 'Good Friday',
+                        start: '2023-04-07T14:00:00',
+                        end: '2023-04-04T16:00:00'
+                    },
+                    {
+                        title: 'Easter Monday',
+                        start: '2023-04-10',
+                        end: '2023-04-04'
+                    }
+                    // more events here
+                ]
+            });
+        });
+    </script>
+</head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - VRA INternational Schools</title>
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--Animate On scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Google Icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--CSS Custom-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar sticky-top navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-wide.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="welcome-message.html">General Manager's Welcome</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="history.html">Our History</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="school-organization.html">School Organization</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="school-hymn.html">School Hymn</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="school-anthem.html">School Anthem</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="school-calen.html">School calendar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="curriculum.html">Curriculum</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="staff.html">Staff</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="programme-and-time.html">Programme & Time Schedule</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="school-activities.html">School Activities</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="co-curricular-activities.html">Co-curricular
+                                    Activities</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="guidance.html">Guidance & Counselling</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Social Life
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="social-guida.html">Social Guidance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="spiritual.html">Spiritual Guidance (Chaplaincy)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="visiting.html">Visiting Hours</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="admission-process.html">Admission Process</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            News & Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="archived.html">Archived News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="student-handbook.html">Student Handbook</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="photo.html">Photo Gallery</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="portal.html">Student Portal</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="webmail.html">Webmail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://placehold.jp/1850x450.png" alt="">
+                <!-- <div class="hero-text">
+                    <h1>School Calendar</h1>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div id='calendar'></div>
+
+    <section>
+        <div class="row admission-home">
+            <div class="col-md-8 ">
+                <h1>Admissions</h1>
+                <button class="button-55" role="button" ">
+                <a href=" admission-process.html" style="text-decoration: none; color: #373B44;">MAKE ENQUIRY</a>
+                </button>
+                <h5>If you have any enquiry, please do not hesitate to contact us.</h5>
+            </div>
+            <div class="col-md-4">
+                <img src="images/admission-logo.png" alt="" class="admission-top">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/admission-logo.png" alt="" width="250px">
+                <br>
+                <h2 style="font-size: 20px; margin-top:20px">FOLLOW US ON:</h2>
+                <p style="width: 100%; text-align:center"><span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <a href="tel:+233 553 248000" style="text-decoration: none; color: #e4e2c6;" ;>+233 553 248000</a>
+                </p>
+                <p style="width: 100%; text-align:center"><span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <a href="tel:+233 553 248000" style="text-decoration: none; color: #e4e2c6;" ;>+233 553 248000</a>
+                </p>
+
+
+                <!-- <p>Akosombo International School was established in 1962 to provide educational facilities at the
+                Kindergarten and Primary levels for the children of workers (mostly expatriates), who were engaged
+                in the construction of the Akosombo dam.</p> -->
+            </div>
+
+            <div class="col-md-3">
+                <h2>ACADEMICS</h2>
+                <li><a href="#">School calendar</a></li>
+
+                <li><a href="#">Curriculum</a></li>
+
+                <li><a href="#">Staff</a></li>
+
+                <li><a href="#">Programme & Time Schedule</a></li>
+
+                <li><a href="#">School Activities</a></li>
+
+                <li><a href="#">Co-curricular Activities</a></li>
+
+                <li><a href="#">Guidance & Counselling</a></li>
+            </div>
+            <div class="col-md-3">
+                <h2>ABOUT US</h2>
+                <li><a href="#">General Manager's Welcome</a></li>
+
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Our History</a></li>
+
+                <li><a href="#">School Organization</a></li>
+
+                <li><a href="#">School Hymn</a></li>
+
+                <li><a href="#">School Anthem</a></li>
+            </div>
+            <div class="col-md-3">
+                <h2>ADMISSIONS</h2>
+                <li><a href="#">Admission Process</a></li>
+
+                <li><a href="#">FAQs </a></li>
+            </div>
+        </div>
+    </footer>
+
+    <!--Animate On Scroll JS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<style>
+    #calendar {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .admission-home{
+        margin-top: 120px;
+    }
+</style>

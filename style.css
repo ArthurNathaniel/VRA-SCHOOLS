@@ -516,3 +516,53 @@ footer h2 {
 height: 100%;
 font-weight: 600;
 }
+.six-section{
+    padding: 0 5%;
+}
+.six-section h1{
+    font-size: 52px;
+}
+
+.card {
+    text-align: left;
+    height: 100%;
+}
+
+
+
+.six-slide {
+    padding: 0 5%;
+}
+
+.curriculum-{
+    margin-top: 50px;
+    padding: 0 5%;
+}
+.curriculum- h1{
+    color: #123156;
+}
+.division{
+ 
+    padding: 0 5%;
+    margin-top: 50px;
+}
+.division h1{
+    color: #123156;
+
+}
+.division h1:hover{
+    color: #cc3366;
+}
+
+.campuses{
+  
+    padding: 0 5%;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+
+.first{
+    background-color: #fff;
+    color: #123156;
+}
