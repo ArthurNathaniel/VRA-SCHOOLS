@@ -642,3 +642,30 @@ footer h2 {
     font-size: 55px;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 600px) {
+    .slide-text {
+   font-size: small;
+    }
+    .slide-text h1{
+        font-size: medium;
+    }
+    .slide-text p{
+        font-size: smaller;
+    }
+    .hidee{
+        display: none;
+    }
+    .touch-point{
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .admission-home{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .admission-top{
+        margin-top: 50px;
+    }
+ 
+  }
