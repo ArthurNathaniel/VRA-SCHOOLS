@@ -5,7 +5,7 @@ body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
     width: 100%;
-    
+
 }
 
 .top- {
@@ -17,14 +17,22 @@ body {
 }
 
 .header {
-    margin-left: 55%;
     background-color: #123156;
     text-decoration: none;
     color: #f2f2f2;
-    height: 100%;
+    padding: 0 6%;
+    height: 30px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+   
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+}
+.header a:hover{
+    color: #e4e2c6;
 }
 
 .top-:hover {
@@ -57,8 +65,9 @@ body {
 .navbar {
     padding: 0 5%;
     padding-block: 25px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    width: 100%;
+    /* border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; */
     /* margin: 0 5%; */
     /* background-color: #fff; */
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
@@ -247,11 +256,12 @@ body {
     text-align: center;
 }
 
-footer {
+.footer {
     padding: 0 5%;
+    width: 100%;
     background-color: #123156;
     padding-top: 50px;
-    color: #fff;
+
 }
 
 footer li {
@@ -364,6 +374,7 @@ footer h2 {
     background-color: #e5b93b;
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
+    /* margin-bottom: -70px; */
 }
 
 .admission-home h1 {
@@ -511,15 +522,18 @@ footer h2 {
     left: 30%;
     z-index: 100;
 }
-.dropdown-item:hover{
-    background-color:transparent;
-height: 100%;
-font-weight: 600;
+
+.dropdown-item:hover {
+    background-color: transparent;
+    height: 100%;
+    font-weight: 600;
 }
-.six-section{
+
+.six-section {
     padding: 0 5%;
 }
-.six-section h1{
+
+.six-section h1 {
     font-size: 52px;
 }
 
@@ -534,35 +548,97 @@ font-weight: 600;
     padding: 0 5%;
 }
 
-.curriculum-{
+.curriculum- {
     margin-top: 50px;
     padding: 0 5%;
 }
-.curriculum- h1{
+
+.curriculum- h1 {
     color: #123156;
 }
-.division{
- 
+
+.division {
+
     padding: 0 5%;
     margin-top: 50px;
 }
-.division h1{
+
+.division h1 {
     color: #123156;
 
 }
-.division h1:hover{
+
+.division h1:hover {
     color: #cc3366;
 }
 
-.campuses{
-  
+.campuses {
+
     padding: 0 5%;
     padding-bottom: 50px;
     color: #fff;
 }
 
 
-.first{
+.first {
     background-color: #fff;
     color: #123156;
+}
+
+.campuses {
+    position: relative;
+}
+
+.swiper6 {
+    position: relative;
+}
+
+.swiper6_nav {
+    top: 35px;
+    position: absolute;
+    right: 180px;
+    z-index: 100;
+}
+
+.prev,
+.next {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.prev {
+    rotate: 180deg;
+}
+
+.time-table {
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.bx {
+    color: #fff;
+}
+
+.bx a {
+    font-family: "Rubik";
+}
+
+.bxs-location-plus i {
+    font-family: "Rubik";
+}
+
+.slide-text {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    padding: 0 5%;
+    width: 50%;
+}
+
+.slide-text h1 {
+    font-size: 55px;
+    font-weight: 700;
 }
