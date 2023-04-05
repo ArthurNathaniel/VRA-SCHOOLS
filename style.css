@@ -645,6 +645,14 @@ footer h2 {
 }
 
 @media only screen and (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+  
+    .touch-point{
+        overflow-x: hidden;
+    }
     .header{
         display: none;
     }
