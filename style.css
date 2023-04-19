@@ -25,13 +25,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
-.header a{
+
+.header a {
     text-decoration: none;
     color: #fff;
 }
-.header a:hover{
+
+.header a:hover {
     color: #e4e2c6;
 }
 
@@ -71,6 +73,7 @@ body {
     /* margin: 0 5%; */
     /* background-color: #fff; */
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .sticky-top {
@@ -285,8 +288,18 @@ footer h2 {
 
 .hero-text {
     position: absolute;
+    width: 50%;
+    left: 0;
+    text-align: left;
+    padding-left: 5%;
 }
 
+.fixed-top{
+    background-color: #fff;
+}
+.mySwiper{
+    margin-top: 130px;
+}
 
 
 
@@ -645,68 +658,87 @@ footer h2 {
 }
 
 @media only screen and (max-width: 900px) {
-    body{
+    body {
         overflow-x: hidden;
         width: 100%;
     }
-  
-    .touch-point{
+
+    .touch-point {
         overflow-x: hidden;
     }
-    .header{
+
+    .header {
         display: none;
     }
+
     .slide-text {
-   font-size: small;
+        font-size: small;
     }
-    .slide-text h1{
+
+    .slide-text h1 {
         font-size: medium;
     }
-    .slide-text p{
+
+    .slide-text p {
         font-size: smaller;
     }
-    .hidee{
+
+    .hidee {
         display: none;
     }
-    .touch-point{
+
+    .touch-point {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
     }
+
     .circle_box {
         position: relative;
         width: 100%;
     }
-    .edu{
+
+    .edu {
         display: block;
         width: 100%;
         margin: 0 auto;
         align-items: center;
         align-self: center;
     }
-    .circle_con{
+
+    .circle_con {
         display: block;
         width: 100%;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
-    .one{
+
+    .one {
         display: block;
     }
-    .admission-home{
+
+    .admission-home {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
     }
-    .admission-top{
+
+    .admission-top {
         margin-top: 50px;
         display: none;
     }
-    .navbar-brand img{
+
+    .navbar-brand img {
         width: 240px;
     }
- 
-  }
-
-  @media only screen and (max-width: 600px) {
-    .slide-text h1{
-font-size: 10px;
+    .mySwiper{
+        margin-top: 100px;
     }
-  }
+    
+    .hero-text h1{
+font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-text h1 {
+        font-size: 10px;
+    }
+}
