@@ -735,6 +735,9 @@ footer h2 {
     .hero-text h1{
 font-size: 10px !important;
     }
+    .hero-text p{
+        font-size: 10px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
