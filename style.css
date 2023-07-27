@@ -294,7 +294,7 @@ footer h2 {
     padding-left: 5%;
 }
 
-.fixed-top{
+.fixed-top {
     background-color: #fff;
 }
 
@@ -761,20 +761,23 @@ footer h2 {
     .navbar-brand img {
         width: 240px;
     }
-   
-    
-    .hero-text h1{
-font-size: 10px !important;
-    }
-    .hero-text p{
+
+
+    .hero-text h1 {
         font-size: 10px !important;
     }
-    .bboxx{
+
+    .hero-text p {
+        font-size: 10px !important;
+    }
+
+    .bboxx {
         display: block;
         padding-block: 50px;
         background-color: #123156;
         height: 100%;
     }
+
     .admission- {
         display: none;
     }
