@@ -16,24 +16,28 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--CSS Custom-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-us.css">
+
+
 
 </head>
 
 <body>
     <div class="whole overflow-hidden">
-        <div class="div fixed-top">
-            <header id="headerPlacement fixed-top sticky-top" class="header  ">
+        <div class="div ">
+            <header id="headerPlacement  " class="header  ">
                 <div class="row ">
                     <div class="col-md-4">
                         <a href=""><i class='bx bxl-facebook'></i></a>
@@ -58,7 +62,7 @@
 
                 </div>
             </header>
-            <nav class="navbar  navbar-expand-lg ">
+            <nav class="navbar  navbar-expand-lg fixed-top sticky-top ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logo-wide.png" alt="logo">
@@ -227,8 +231,60 @@
             </nav>
 
         </div>
+        <style>
+            .mySwiper {
+                margin-top: 0;
+            }
+
+            .bboxx {
+                background-color: #123156;
+                color: #000;
+                border: 2px solid #fff;
+                height: 125px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                color: #fff;
+
+            }
+            .ghdias{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .bjad{
+                 display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .ghdias a{
+                color: #fff;
+                background-color: #e6bf3e;
+                padding: 15px 35px;
+                text-decoration: none;
+                color: #123156;
+            }
+        </style>
+
+        <Section>
 
 
+            <div class="bboxx">
+                <div class="bjad">
+                    <h1 class="text-center">Admissions Open</h1>
+                    <p id="moving-textt"></p>
+                     
+                </div>
+                <div class="ghdias">
+                    <a href="./documents/admssiion.pdf" target="_blank">
+                        <i class="fa-regular fa-file-pdf"></i> DOWNLOAD ADMISSION PDF
+                    </a>
+                </div>
+            </div>
+
+
+        </Section>
         <section>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -289,17 +345,18 @@
             </div>
         </section>
 
-        
+
         <style>
             .admission- {
-                 background-color: #123156;
+                background-color: #123156;
                 margin: 0 auto;
                 padding: 15px 30px;
                 text-decoration: none;
                 color: #fff;
                 border-radius: 5px;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
+
             .admission-open a {
                 background-color: #123156;
                 margin: 0 auto;
@@ -513,17 +570,17 @@
             </div>
 
         </section>
-<Section>
-    <div class="admission-open" style="margin-top: 50px;">
-        <h1 class="text-center">VRA Schools Admission Opens</h1>
-        <p class="text-center">
-            Enroll your child for a transformative educational experience.
-        </p>
-        <a href="./documents/admssiion.pdf" target="_blank">
-            <i class="fa-regular fa-file-pdf"></i> DOWNLOAD ADMISSION PDF
-        </a>
-    </div>
-</Section>
+        <Section>
+            <div class="admission-open" style="margin-top: 50px;">
+                <h1 class="text-center">VRA Schools Admission Opens</h1>
+                <p class="text-center">
+                    Enroll your child for a transformative educational experience.
+                </p>
+                <a href="./documents/admssiion.pdf" target="_blank">
+                    <i class="fa-regular fa-file-pdf"></i> DOWNLOAD ADMISSION PDF
+                </a>
+            </div>
+        </Section>
         <section>
             <div class="news">
                 <h6>THE LATEST NEWS, EVENTS, AND UPDATES AT VRA INTERNATIONAL SCHOOLS</h6>
@@ -675,6 +732,21 @@
             </div>
         </footer>
     </div>
+
+   <script>
+    // Add this script after including Typed.js and defining the HTML modifications
+    const textElement = document.getElementById('moving-textt');
+    const text = 'Enroll your child for a transformative educational experience.';
+    const typed = new Typed(textElement, {
+        strings: [text],
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: false,
+       
+    });
+</script>
+
 
     <!--Animate On Scroll JS-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
